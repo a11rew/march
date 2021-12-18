@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         tp: "rgba(71, 57, 157, 0.16)",
+        brandpurple: "#47399D",
       },
     },
   },
