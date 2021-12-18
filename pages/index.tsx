@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <main className="p-11 h-full max-w-[1336px] m-auto flex flex-col justify-evenly">
+      <main className="p-11 pt-20 h-full max-w-[1336px] m-auto flex flex-col justify-evenly">
         <div>
           <h1 className="font-medium text-5xl">
             Get entry-level roles
