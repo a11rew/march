@@ -11,7 +11,7 @@ const Profile: NextPage = () => {
           Complete your profile with{" "}
           <span className="text-brandpurple">March</span>
         </p>
-        <div className="flex mt-[60px] gap-10 justify-between w-full">
+        <div className="flex mt-[60px] gap-10 justify-between w-full max-w-[1046px]">
           <form className="flex flex-col gap-6">
             <div className="flex gap-4">
               <label>
