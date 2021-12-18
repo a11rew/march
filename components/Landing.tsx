@@ -52,7 +52,7 @@ const Landing: React.FC = (): JSX.Element => {
       </div>
       <div className="flex gap-24 items-center">
         <div className="flex-shrink-0">
-          <Image src={Landing1} alt="Promo image showing badges" />
+          <Image src={Landing3} alt="Promo image showing badges" />
         </div>
         <div>
           <h3 className="font-medium text-5xl">
