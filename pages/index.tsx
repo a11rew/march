@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Landing from "../components/Landing";
 
 const Home: NextPage = () => {
   return (
@@ -10,29 +11,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-screen pt-20 flex flex-col justify-evenly">
-        <div>
-          <h1 className="font-medium text-5xl">
-            Get entry-level roles
-            <br />
-            in tech with zero work
-            <br />
-            experience
-          </h1>
-          <div className="flex items-center gap-8 mt-9">
-            <button className="bg-[#47399D] py-3 px-10 text-white">
-              Signup
-            </button>
-            <a href="#" className="text-[#47399D] underline hover:no-underline">
-              Read how we&apos;re doing it
-            </a>
-          </div>
-        </div>
-        <div>
-          <p className="text-center">
-            Marching new grads to entry level roles in partnership with
-          </p>
-        </div>
+      <div className="">
+        <Landing />
       </div>
     </div>
   );
