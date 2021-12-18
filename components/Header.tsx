@@ -15,24 +15,21 @@ const Header = (): JSX.Element => {
         <Link passHref href="/">
           <Image src={Logo} alt="March logo" className="cursor-pointer" />
         </Link>
-        {loggedIn ? (
-          <nav className="flex gap-[72px]">
-            <NavLink pathname={pathname} href="/">
-              Home
-            </NavLink>
-            <NavLink pathname={pathname} href="/badges">
-              Badges
-            </NavLink>
-            <NavLink pathname={pathname} href="/match">
-              Match
-            </NavLink>
-            <NavLink pathname={pathname} href="/profile">
-              My Profile
-            </NavLink>
-          </nav>
-        ) : (
-          <button onClick={() => setLoggedIn(true)}>Log in to March</button>
-        )}
+
+        <nav className="flex gap-[72px]">
+          <NavLink pathname={pathname} href="/">
+            Home
+          </NavLink>
+          <NavLink pathname={pathname} href="/badges">
+            Badges
+          </NavLink>
+          <NavLink pathname={pathname} href="/match">
+            Match
+          </NavLink>
+          <NavLink pathname={pathname} href="/profile">
+            My Profile
+          </NavLink>
+        </nav>
       </div>
     </header>
   );
