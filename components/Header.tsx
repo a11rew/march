@@ -23,8 +23,8 @@ const Header = (): JSX.Element => {
             <NavLink pathname={pathname} href="/badges">
               Badges
             </NavLink>
-            <NavLink pathname={pathname} href="/jobs">
-              Jobs
+            <NavLink pathname={pathname} href="/match">
+              Match
             </NavLink>
             <NavLink pathname={pathname} href="/profile">
               My Profile
