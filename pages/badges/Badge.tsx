@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import BadgeAvailable from "../../assets/badge_available.png";
 import BadgeLocked from "../../assets/badge_lock.png";
@@ -16,6 +17,8 @@ const Badge: React.FC<Props> = ({
   rank,
   course,
 }): JSX.Element => {
+  const router = useRouter();
+
   return (
     <div
       className={`bg-[#F5F5F5] border  font-medium rounded ${
@@ -42,6 +45,7 @@ const Badge: React.FC<Props> = ({
           <p>Show potential employers you know the basics of {course}</p>
           <button
             disabled={Boolean(disabled)}
+            onClick={() => router.push("/test")}
             className="py-[17px] bg-[#47399D] text-white w-full mt-12"
           >
             Test me!
