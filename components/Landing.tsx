@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Landing: React.FC = (): JSX.Element => {
   return (
-    <div className="flex flex-col gap-24 mt-40">
+    <div className="flex flex-col gap-32 mt-40">
       <div>
         <h1 className="font-medium text-5xl">
           Get entry-level roles
