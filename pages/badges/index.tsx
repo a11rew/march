@@ -17,7 +17,7 @@ const Badges: NextPage = (): JSX.Element => {
         </p>
         <Dropdown selected={selected} setSelected={setSelected} />
 
-        {selected && <BadgesDisplay />}
+        {selected && <BadgesDisplay selected={selected.name} />}
       </div>
     </div>
   );

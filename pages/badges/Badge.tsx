@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import BadgeAvailable from "../../assets/badge_available.png";
 import BadgeLocked from "../../assets/badge_lock.png";
 
@@ -6,9 +7,15 @@ interface Props {
   disabled?: Boolean;
   rank: "Beginner" | "Intermediate" | "Advanced";
   level: 1 | 2 | 3;
+  course: string;
 }
 
-const Badge = ({ disabled, level, rank }: Props): JSX.Element => {
+const Badge: React.FC<Props> = ({
+  disabled,
+  level,
+  rank,
+  course,
+}): JSX.Element => {
   return (
     <div
       className={`bg-[#F5F5F5] border  font-medium rounded ${
@@ -32,7 +39,7 @@ const Badge = ({ disabled, level, rank }: Props): JSX.Element => {
         </div>
 
         <div className="p-[18px]">
-          <p>Show potential employees you know the basics of UI/UX Design</p>
+          <p>Show potential employees you know the basics of {course}</p>
           <button
             disabled={Boolean(disabled)}
             className="py-[17px] bg-[#47399D] text-white w-full mt-12"
