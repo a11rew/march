@@ -2,6 +2,8 @@ import { NextPage } from "next";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/router";
 import Banner from "./Banner";
+import Badge from "../../assets/badge_available.png";
+import Image from "next/image";
 
 const Test: NextPage = (): JSX.Element => {
   const router = useRouter();
@@ -39,7 +41,12 @@ const Test: NextPage = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <p>Score above 80% to earn a badge</p>
+        <div className="text-brandpurple flex gap-4">
+          <div>
+            <Image src={Badge} alt="Badge" />
+          </div>
+          <p>Score above 80% to earn a badge</p>
+        </div>
 
         <div className="flex gap-4">
           <button className="py-2 px-14 border-2 border-[#47399D] text-[#47399D] rounded">
