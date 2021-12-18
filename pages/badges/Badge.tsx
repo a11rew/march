@@ -39,7 +39,7 @@ const Badge: React.FC<Props> = ({
         </div>
 
         <div className="p-[18px]">
-          <p>Show potential employees you know the basics of {course}</p>
+          <p>Show potential employers you know the basics of {course}</p>
           <button
             disabled={Boolean(disabled)}
             className="py-[17px] bg-[#47399D] text-white w-full mt-12"
